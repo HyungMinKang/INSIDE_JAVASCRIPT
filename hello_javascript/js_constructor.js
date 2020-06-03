@@ -229,6 +229,7 @@ for (var i = 0; i < arr.length; i++) {
 
 
 //delete & splice
+delete 연산자로 배열 원소 삭제시 - 배열의 length값 변하지 않음 - 원소가 사라지지 않고 undefinied로 설정됨
 var arr = ["zero", "one", "two", "three"];
 /*DELETE 
 delete arr[2];
@@ -236,6 +237,7 @@ console.log(arr);
 console.log(arr.length); */
 
 /* SPLICE
+배열의 원소를 삭제 시키리면 splice를 사용하는게 적합-  splice(start, deleteCount, (item..))
 arr.splice(2, 1);
 console.log(arr);
 console.log(arr.length);
